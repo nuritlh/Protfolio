@@ -10,16 +10,16 @@
             <a href="#contact">contact</a>
           </div>
           <div class="name">
-            <p class="title">I'm</p>
+            <p class="title">I<span class="span-color">'</span>m</p>
             <p class="title">nurit</p>
             <p class="title">Levi</p>
-            <p class="title job">Full Stack Developer</p>
+            <p class="title job">Full Stack Developer <span class="span-color">.</span></p>
           </div>
           <div class="about">
             <p>Full Stack Developer, Passionate about technology, Striving to be the best, Independent in my doing & thinking.</p>
-            <p>Created advanced single page applications using Vue.js, Vuex state management, components, routing, node.js and
+            <!-- <p>Created advanced single page applications using Vue.js, Vuex state management, components, routing, node.js and
               more.
-            </p>
+            </p> -->
             <p>Have a degree in Industrial Engineering, Major in Information Systems, Graduate Full Stack, Web application boot-camp
               at Coding-Academy.
             </p>
@@ -29,7 +29,7 @@
     <div class="page-container">
         <div id="professional" class="page">
           <div class="page-title">
-            professional
+            01 professional
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
           <div class="content">
@@ -56,7 +56,7 @@
         </div>
         <div id="protfolio" class="page">
           <div class="page-title">
-            protfolio
+            02 protfolio
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
           <div class="card">
@@ -97,13 +97,53 @@
           </div>
         <div id="experience" class="page">
           <div class="page-title">
-            experience
+            03 experience
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
+            <div class="experience-container">
+              <div class="employment">
+                <div class="experience-title">Employment</div>
+                <div class="experience-details">
+                  <p class="company-name"><img class="img-company" src="../assets/img/mellanox.png">Mellanox Technologies</p>
+                  <p class="years">2015-2018</p>
+                  <p class="job-title">Project Management</p>
+                  <p class="years">2017-2018</p>
+                  <p class="job-details">Information Project Management for all manufacturing operations units.
+                    Improving processes, identifying problems, defining work methodology, tools and methods.
+                    Set customer requirements, system selection (internal, external requirements of suppliers, customers, employees).
+                    QA for internal & custom systems/tools.
+                  </p>
+                  <p class="job-title">Supply Chain Controller</p>
+                    <p class="years">2015-2017</p>
+                  <p class="job-details">Responsible for planning and controlling the supply chain from the moment the raw material leaves the factories until it reaches the customer.
+                    Weekly reports of production group KPIs, inventories budgets and customer satisfaction to senior management (VP
+                    Operations & Corporate Quality).
+                  </p>
+                  <p class="company-name"><img class="img-company" src="../assets/img/DolphinSoft.png">DolphinSoft</p>
+                  <p class="years">2014</p>
+                  <p class="job-details">Web Application Developer. End to end customer websites development.
+                    Setting up site infrastructure, design and promoting websites. 
+                    Customer services, Including support for new characterization requirements and changes.
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="education">
+                <div class="experience-title">Education</div>
+                <div class="experience-details">
+                  <p class="company-name"><img class="img-company" src="../assets/img/logo5.png">Coding-Academy</p>
+                  <p class="years">2018</p>
+                  <p class="job-details">An intensive coding boot-camp (540 hours) that qualifies Front-End developers</p>
+                  <p class="company-name"><img class="img-company" src="../assets/img/Ruppin_Academic_Center_Logo.svg.png">Ruppin Academic Center</p>
+                  <p class="years">2011-2015</p>
+                  <p class="job-details">Bachelor of Science – BS, Industrial Engineering, Major in Information Systems.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="contact" class="page">
           <div class="page-title">
-            contact
+            04 contact
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
             <div class="contact">
             <form>
@@ -190,14 +230,18 @@ export default {
 .title {
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 4em;
   margin: 10px 10px 10px 100px;
   text-align: left;
+  font-family: Montserrat-bold, cursive;
 }
 .job {
   font-size: 1.5em;
   font-weight: normal;
+}
+.span-color {
+  color: #b94a61;
 }
 .name {
   margin: 90px 0 0 0;
@@ -207,13 +251,20 @@ export default {
   top: 135px;
 }
 .page {
-  /* height: calc(100vh); */
+  min-height: calc(100vh);
   text-transform: uppercase;
   padding: 20px;
   font-size: 2em;
 }
 .page-title {
-  margin: 100px auto;
+  margin: 0px auto 50px auto;
+  font-family: Montserrat-bold, cursive;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+.fa-arrow-alt-circle-up:before {
+  cursor: pointer;
 }
 .about {
   width: 80%;
@@ -225,7 +276,7 @@ export default {
   top: 135px;
 }
 .about p {
-  margin: 5px;
+  margin: 10px;
 }
 .content {
   background-image: url('../assets/img/feather-clipart-bunch-5.png');
@@ -330,6 +381,60 @@ export default {
   }
 }
 
+.experience-container {
+  display: flex;
+  font-size: 0.5em;
+  justify-content: space-around;
+  padding: 40px 0 0 0;
+  font-weight: 100;
+  flex-direction: row;
+  text-transform: initial;
+  text-align: left;
+}
+.employment,
+.education {
+  width: 50%;
+  padding: 20px;
+}
+.experience-title {
+  text-align: center;
+  color: #eab808;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.company-name {
+  font-weight: 600;
+  color: #172712;
+  margin: 0;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+}
+.img-company {
+  height: 50px;
+  margin: 0 10px 0 0;
+}
+.years {
+  font-size: 13px;
+  color: #172712cf;
+  margin: 5px 0 0 0;
+  letter-spacing: 0;
+}
+.job-title {
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.experience-details {
+  font-size: 16px;
+  padding: 20px 0;
+}
+.job-details {
+  letter-spacing: 1px;
+  font-family: Montserrat, cursive;
+}
 .contact {
   width: 80%;
   margin: 10px auto;
@@ -337,15 +442,15 @@ export default {
   background-color: #25321ddb;
   padding: 20px;
   position: relative;
-  top: 135px;
+  top: 50px;
 }
 .contact > form > input {
-  width: 96%;
+  width: 100%;
   padding: 10px;
-  font-family: fantasy;
+  font-weight: bolder;
 }
 .contact > form > textarea {
-  width: 96%;
+  width: 100%;
   margin: 10px auto;
   padding: 10px;
   height: 200px;
@@ -359,9 +464,23 @@ export default {
   font-weight: bold;
   cursor: pointer;
 }
+
+@media screen and (max-width: 690px) {
+  .experience-container {
+    flex-direction: column;
+  }
+  .employment,
+  .education {
+    width: 100%;
+    padding: 0px;
+  }
+}
 @media screen and (max-width: 510px) {
   .cover-pic {
     background-position: right;
+  }
+  .page-title {
+    font-size: 1.1em;
   }
   .title {
     font-size: 2em;
@@ -377,9 +496,10 @@ export default {
     font-size: 1.5em;
   }
   .about {
-    top: 300px;
+    top: 200px;
     margin: 0px auto;
   }
+
   .content {
     background-repeat: space;
   }
