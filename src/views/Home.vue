@@ -13,7 +13,7 @@
           <div class="nav">
             <a href="#">home</a> | 
             <a href="#professional">skills</a> | 
-            <a href="#protfolio">protfolio</a> | 
+            <a href="#portfolio ">portfolio </a> | 
             <a href="#experience">experience</a> | 
             <a href="#contact">contact</a>
           </div>
@@ -101,9 +101,9 @@
             </div>
           </div>
         </div>
-        <div id="protfolio" class="page screen-prot protfolio">
+        <div id="portfolio " class="page screen-prot portfolio ">
           <div class="page-title">
-            protfolio
+            portfolio 
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
           <div class="card">
@@ -413,8 +413,8 @@ export default {
     rgb(54, 99, 72)
   );
 }
-.protfolio {
-  background-image: url('../assets/img/protfolio-back.jpg');
+.portfolio {
+  background-image: url('../assets/img/portfolio-back.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

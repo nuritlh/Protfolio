@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.3587a5226718c68383aaa7e99e8a0be0.js"
+  "/precache-manifest.d7d54e506df66c034ba088548554a718.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "protfolio"});

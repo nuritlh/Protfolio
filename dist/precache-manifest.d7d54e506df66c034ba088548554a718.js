@@ -24,6 +24,10 @@ self.__precacheManifest = [
     "url": "/fonts/Montserrat-Bold.88932dad.ttf"
   },
   {
+    "revision": "7335ca1e6f0e1a0caa232b7f2587eac4",
+    "url": "/img/portfolio-back.7335ca1e.jpg"
+  },
+  {
     "revision": "78aee62ec4e05cfadf802302d98802f1",
     "url": "/img/feather-clipart-bunch-5.78aee62e.png"
   },
@@ -34,10 +38,6 @@ self.__precacheManifest = [
   {
     "revision": "c19dec08a9de5297d83d37061e99c89b",
     "url": "/img/nurit.c19dec08.jpg"
-  },
-  {
-    "revision": "7335ca1e6f0e1a0caa232b7f2587eac4",
-    "url": "/img/protfolio-back.7335ca1e.jpg"
   },
   {
     "revision": "f80a91ba03fbf0e99ea6949aa3a6399e",
@@ -60,11 +60,11 @@ self.__precacheManifest = [
     "url": "/img/Boostrap_logo.06596577.svg"
   },
   {
-    "revision": "d90348350f36e71ab575",
-    "url": "/js/app.185568f5.js"
+    "revision": "228826ef5b00a8afd3c3",
+    "url": "/js/app.79485c44.js"
   },
   {
-    "revision": "578dd22d50aab892f566e017c61f32b0",
+    "revision": "0752bde70641bdd336fcb7ae2e24e971",
     "url": "/index.html"
   },
   {
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/fonts/MavenPro-Regular.ac039aee.ttf"
   },
   {
-    "revision": "d90348350f36e71ab575",
-    "url": "/css/app.e1366a2f.css"
+    "revision": "228826ef5b00a8afd3c3",
+    "url": "/css/app.9cd22858.css"
   }
 ];
