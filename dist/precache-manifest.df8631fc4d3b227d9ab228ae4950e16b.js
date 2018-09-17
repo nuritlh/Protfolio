@@ -60,11 +60,11 @@ self.__precacheManifest = [
     "url": "/img/Boostrap_logo.06596577.svg"
   },
   {
-    "revision": "228826ef5b00a8afd3c3",
-    "url": "/js/app.79485c44.js"
+    "revision": "6f65baea54056e2a4889",
+    "url": "/js/app.5a7173ad.js"
   },
   {
-    "revision": "0752bde70641bdd336fcb7ae2e24e971",
+    "revision": "262ea1534113460829985cdff895717f",
     "url": "/index.html"
   },
   {
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/fonts/MavenPro-Regular.ac039aee.ttf"
   },
   {
-    "revision": "228826ef5b00a8afd3c3",
+    "revision": "6f65baea54056e2a4889",
     "url": "/css/app.9cd22858.css"
   }
 ];

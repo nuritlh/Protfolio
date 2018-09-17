@@ -13,7 +13,7 @@
           <div class="nav">
             <a href="#">home</a> | 
             <a href="#professional">skills</a> | 
-            <a href="#portfolio ">portfolio </a> | 
+            <a href="#portfolio">portfolio</a> | 
             <a href="#experience">experience</a> | 
             <a href="#contact">contact</a>
           </div>
@@ -101,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div id="portfolio " class="page screen-prot portfolio ">
+        <div id="portfolio" class="page screen-prot portfolio">
           <div class="page-title">
             portfolio 
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
