@@ -1,7 +1,15 @@
 <template>
   <div class="home">
-
-    <div class="cover-pic screen" id="home">
+    <div v-if="load" class="loading">
+      <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+        <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
+        <circle cx="170" cy="170" r="135" stroke="#404041"/>
+        <circle cx="170" cy="170" r="110" stroke="#E2007C"/>
+        <circle cx="170" cy="170" r="85" stroke="#404041"/>
+      </svg>
+    </div>
+    <div v-if="!load">
+    <div  class="cover-pic screen" id="home">
           <div class="nav">
             <a href="#">home</a> | 
             <a href="#professional">skills</a> | 
@@ -10,11 +18,50 @@
             <a href="#contact">contact</a>
           </div>
           <div class="name">
+            
             <p class="title">I<span class="span-color">'</span>m</p>
             <p class="title">nurit</p>
             <p class="title">Levi<span class="span-color">.</span></p>
             <p class="title job">Full Stack Developer <span class="span-color">.</span></p>
-          </div>
+            <br>
+                <div class="container">
+                  <svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>@WebDesignerMag</title>
+                    <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+                      <text id="@WebDesignerMag" stroke="#fff" fill="#645F5A" font-weight="normal" font-family="PermanentMarker-Regular, Permanent Marker" font-size="144">
+                        <tspan x="3" y="109"><!--
+                          --><tspan>W</tspan><!--
+                          --><tspan>e</tspan><!--
+                          --><tspan>l</tspan><!--
+                          --><tspan>c</tspan><!--
+                          --><tspan>o</tspan><!--
+                          --><tspan>m</tspan><!--
+                          --><tspan>e</tspan><!--
+                          --><tspan>.</tspan><!--
+                          --><tspan>.</tspan><!--
+                          --><tspan>.</tspan><!--
+                        --></tspan>
+                      </text>
+                    </g>
+                  </svg>
+                </div>
+                <br>
+                <div class="container-bird">
+                <div class="bird-container bird-container--one">
+                  <div class="bird bird--one"></div>
+                </div>
+                <div class="bird-container bird-container--two">
+                  <div class="bird bird--two"></div>
+                </div>
+                <div class="bird-container bird-container--three">
+                  <div class="bird bird--three"></div>
+                </div>
+                <div class="bird-container bird-container--four">
+                  <div class="bird bird--four"></div>
+                </div>
+              </div>
+
+            </div>
           <div class="about">
             <p>Full Stack Developer, Passionate about technology, Striving to be the best, Independent in my doing & thinking.</p>
             <!-- <p>Created advanced single page applications using Vue.js, Vuex state management, components, routing, node.js and
@@ -149,9 +196,9 @@
                 <p>+ 972 - 504995755</p>
                 <p>nuritlh@gmail.com</p>
                 <div>
-                  <a href="https://www.linkedin.com/in/nurit-levi-hevroni-0308392b/"><i class="fab fa-linkedin icons"></i></a>
-                  <a href="https://www.facebook.com/nurit.hevroni?ref=br_rs"><i class="fab fa-facebook-square icons"></i></a>
-                  <a href="https://www.instagram.com/nurit_lh/"><i class="fab fa-instagram icons"></i></a>
+                  <a href="https://www.linkedin.com/in/nurit-levi-hevroni-0308392b/" target="_blank"><i class="fab fa-linkedin icons"></i></a>
+                  <a href="https://www.facebook.com/nurit.hevroni?ref=br_rs" target="_blank"><i class="fab fa-facebook-square icons"></i></a>
+                  <a href="https://www.instagram.com/nurit_lh/" target="_blank"><i class="fab fa-instagram icons"></i></a>
                 </div>
               </div>
             <div class="contact">
@@ -168,6 +215,7 @@
           </div>
         </div>
     </div>
+    </div>
   </div>
 </template>
 
@@ -177,7 +225,21 @@
 export default {
   name: 'home',
   components: {},
+  data() {
+    return {
+      load: false
+    };
+  },
+  created() {
+    this.loading();
+  },
   methods: {
+    loading() {
+      setTimeout(function() {
+        this.load = false;
+        console.log('here', this.load);
+      }, 1000);
+    },
     scrollUp() {
       window.scroll({
         top: 0,
@@ -185,6 +247,7 @@ export default {
         behavior: 'smooth'
       });
     },
+
     onFormContactClicked() {
       // ev.preventDefault();
       var contactSubject = document.querySelector('#subject-mail').value;
@@ -291,7 +354,7 @@ export default {
   background-color: #25321ddb;
   padding: 20px;
   position: relative;
-  top: 120px;
+  top: 60px;
 }
 .about p {
   margin: 10px;
@@ -504,7 +567,7 @@ export default {
   font-family: Montserrat, cursive;
 }
 .contact {
-  width: 80%;
+  width: 50%;
   margin: 10px auto;
   text-align: left;
   background-color: #25321d3b;
@@ -564,6 +627,9 @@ export default {
     width: 100%;
     padding: 0px;
   }
+  .contact {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 510px) {
   .cover-pic {
@@ -586,8 +652,11 @@ export default {
     font-size: 1.5em;
   }
   .about {
-    top: 200px;
+    top: 130px;
     margin: 0px auto;
+  }
+  .name {
+    margin: 170px 0 0 0;
   }
 
   .content {
@@ -608,6 +677,401 @@ export default {
   .project-cover {
     margin: 0 auto;
     width: 260px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 10px 100px;
+}
+.container svg {
+  max-width: 45rem;
+  width: 100%;
+  height: auto;
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+}
+.container svg tspan > tspan {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: -1500;
+}
+.container svg tspan > tspan:nth-of-type(1) {
+  animation: draw 1000ms 300ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(2) {
+  animation: draw 1000ms 450ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(3) {
+  animation: draw 1000ms 600ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(4) {
+  animation: draw 1000ms 750ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(5) {
+  animation: draw 1000ms 900ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(6) {
+  animation: draw 1000ms 1050ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(7) {
+  animation: draw 1000ms 1200ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(8) {
+  animation: draw 1000ms 1350ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(9) {
+  animation: draw 1000ms 1500ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(10) {
+  animation: draw 1000ms 1650ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(11) {
+  animation: draw 1000ms 750ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(12) {
+  animation: draw 1000ms 900ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(13) {
+  animation: draw 1000ms 1050ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(14) {
+  animation: draw 1000ms 1200ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(15) {
+  animation: draw 1000ms 1050ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(16) {
+  animation: draw 1000ms 1200ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(17) {
+  animation: draw 1000ms 300ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(18) {
+  animation: draw 1000ms 450ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(19) {
+  animation: draw 1000ms 600ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(20) {
+  animation: draw 1000ms 750ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(21) {
+  animation: draw 1000ms 900ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(22) {
+  animation: draw 1000ms 1050ms forwards;
+}
+.container svg tspan > tspan:nth-of-type(23) {
+  animation: draw 1000ms 1200ms forwards;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container-bird {
+  z-index: 7;
+  position: absolute;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 9rem;
+  width: 100%;
+  top: 80px;
+}
+
+.bird {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
+  -webkit-animation-name: fly-cycle;
+  animation-name: fly-cycle;
+  -webkit-animation-timing-function: steps(10);
+  animation-timing-function: steps(10);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.bird--one {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.bird--two {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-delay: -0.75s;
+  animation-delay: -0.75s;
+}
+.bird--three {
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+}
+.bird--four {
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.bird-container {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  -webkit-transform: scale(0) translateX(-10vw);
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  -webkit-animation-name: fly-right-one;
+  animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.bird-container--one {
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+.bird-container--two {
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.bird-container--three {
+  -webkit-animation-duration: 14.6s;
+  animation-duration: 14.6s;
+  -webkit-animation-delay: 9.5s;
+  animation-delay: 9.5s;
+}
+.bird-container--four {
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+  -webkit-animation-delay: 10.25s;
+  animation-delay: 10.25s;
+}
+
+@-webkit-keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+@-webkit-keyframes fly-right-one {
+  0% {
+    -webkit-transform: scale(0.3) translateX(-10vw);
+    transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+@keyframes fly-right-one {
+  0% {
+    -webkit-transform: scale(0.3) translateX(-10vw);
+    transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+@-webkit-keyframes fly-right-two {
+  0% {
+    transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+  }
+  10% {
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(-4vh) translateX(30vw) scale(0.6);
+  }
+  30% {
+    transform: translateY(1vh) translateX(50vw) scale(0.45);
+  }
+  40% {
+    transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.45);
+  }
+  51% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+}
+@keyframes fly-right-two {
+  0% {
+    transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+  }
+  10% {
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(-4vh) translateX(30vw) scale(0.6);
+  }
+  30% {
+    transform: translateY(1vh) translateX(50vw) scale(0.45);
+  }
+  40% {
+    transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.45);
+  }
+  51% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ededed;
+}
+
+.loader {
+  max-width: 15rem;
+  width: 100%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+circle {
+  fill: none;
+  stroke-width: 3.5;
+  -webkit-animation-name: preloader;
+  animation-name: preloader;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: 170px 170px;
+  transform-origin: 170px 170px;
+  will-change: transform;
+}
+circle:nth-of-type(1) {
+  stroke-dasharray: 550px;
+}
+circle:nth-of-type(2) {
+  stroke-dasharray: 500px;
+}
+circle:nth-of-type(3) {
+  stroke-dasharray: 450px;
+}
+circle:nth-of-type(4) {
+  stroke-dasharray: 300px;
+}
+circle:nth-of-type(1) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+circle:nth-of-type(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+circle:nth-of-type(3) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+circle:nth-of-type(4) {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+@-webkit-keyframes preloader {
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader {
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 </style>
