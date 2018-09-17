@@ -4,7 +4,7 @@
     <div class="cover-pic screen" id="home">
           <div class="nav">
             <a href="#">home</a> | 
-            <a href="#professional">professional</a> | 
+            <a href="#professional">skills</a> | 
             <a href="#protfolio">protfolio</a> | 
             <a href="#experience">experience</a> | 
             <a href="#contact">contact</a>
@@ -12,7 +12,7 @@
           <div class="name">
             <p class="title">I<span class="span-color">'</span>m</p>
             <p class="title">nurit</p>
-            <p class="title">Levi</p>
+            <p class="title">Levi<span class="span-color">.</span></p>
             <p class="title job">Full Stack Developer <span class="span-color">.</span></p>
           </div>
           <div class="about">
@@ -27,12 +27,12 @@
           </div>
     </div>
     <div class="page-container">
-        <div id="professional" class="page">
+        <div id="professional" class="page content">
           <div class="page-title">
-            01 professional
+            skills
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
-          <div class="content">
+          <div class="">
             <div>
               <img class="img-logo" src="../assets/img/ES6LOGO.svg">
               <img  class="img-logo" src="../assets/img/html.svg">
@@ -54,9 +54,9 @@
             </div>
           </div>
         </div>
-        <div id="protfolio" class="page">
+        <div id="protfolio" class="page screen-prot protfolio">
           <div class="page-title">
-            02 protfolio
+            protfolio
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
           <div class="card">
@@ -95,9 +95,9 @@
             </div>
             </div>
           </div>
-        <div id="experience" class="page">
+        <div id="experience" class="page screen-experience experience">
           <div class="page-title">
-            03 experience
+            experience
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
             <div class="experience-container">
               <div class="employment">
@@ -141,13 +141,26 @@
             </div>
           </div>
         </div>
-        <div id="contact" class="page">
+        <div id="contact" class="page content">
           <div class="page-title">
-            04 contact
+            contact
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
+            <div class="my-contact-details">
+                <p>+ 972 - 504995755</p>
+                <p>nuritlh@gmail.com</p>
+                <div>
+                  <a href="https://www.linkedin.com/in/nurit-levi-hevroni-0308392b/"><i class="fab fa-linkedin icons"></i></a>
+                  <a href="https://www.facebook.com/nurit.hevroni?ref=br_rs"><i class="fab fa-facebook-square icons"></i></a>
+                  <a href="https://www.instagram.com/nurit_lh/"><i class="fab fa-instagram icons"></i></a>
+                </div>
+              </div>
             <div class="contact">
             <form>
-                <input type="email" class="form-control" id="subject-mail" aria-describedby="emailHelp" placeholder="SUBJECT">
+              <div class="inputs-details">
+                <input type="text" class="input-details" id="name-mail" aria-describedby="emailHelp" placeholder="Name">
+                <input type="text" class="input-details" id="phone-mail" aria-describedby="emailHelp" placeholder="Phone">
+              </div>
+                <input type="text" class="input-sub" id="subject-mail" aria-describedby="emailHelp" placeholder="Subject">
                 <textarea class="form-control contact-me-body" id="mail-massage-body" rows="3" placeholder="WRITE ME HERE..."></textarea>
               <button type="button" class="send-btn" @click="onFormContactClicked">SEND</button>
             </form>
@@ -175,9 +188,14 @@ export default {
     onFormContactClicked() {
       // ev.preventDefault();
       var contactSubject = document.querySelector('#subject-mail').value;
-      var contactbody = document.querySelector('#mail-massage-body').value;
+      var contactBody = document.querySelector('#mail-massage-body').value;
+      var contactName = document.querySelector('#name-mail').value;
+      var contactPhone = document.querySelector('#phone-mail').value;
+      var body = `${contactBody}
+               ${contactName}
+               ${contactPhone}`;
       window.open(
-        `https://mail.google.com/mail/?view=cm&fs=1&to=nuritlh@gmail.com&su=${contactSubject}&body=${contactbody}`,
+        `https://mail.google.com/mail/?view=cm&fs=1&to=nuritlh@gmail.com&su=${contactSubject}&body=${body}`,
         '_blank'
       );
     }
@@ -273,7 +291,7 @@ export default {
   background-color: #25321ddb;
   padding: 20px;
   position: relative;
-  top: 135px;
+  top: 120px;
 }
 .about p {
   margin: 10px;
@@ -282,7 +300,6 @@ export default {
   background-image: url('../assets/img/feather-clipart-bunch-5.png');
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   background-position: left;
   animation-name: background-image;
@@ -314,6 +331,32 @@ export default {
 }
 .mongo {
   width: 200px;
+}
+
+.screen-prot {
+  position: relative;
+}
+.screen-prot::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    rgb(67, 112, 89),
+    rgba(54, 94, 105, 0.54),
+    rgb(54, 99, 72)
+  );
+}
+.protfolio {
+  background-image: url('../assets/img/protfolio-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all 1s ease;
+  z-index: 3;
 }
 .card {
   margin: 0 auto;
@@ -381,6 +424,31 @@ export default {
   }
 }
 
+.screen-experience {
+  position: relative;
+}
+.screen-experience::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    rgb(54, 99, 72),
+    rgba(90, 128, 105, 0.8),
+    rgb(59, 103, 75)
+  );
+}
+.experience {
+  background-image: url('../assets/img/way-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all 1s ease;
+  z-index: 3;
+}
 .experience-container {
   display: flex;
   font-size: 0.5em;
@@ -439,30 +507,52 @@ export default {
   width: 80%;
   margin: 10px auto;
   text-align: left;
-  background-color: #25321ddb;
+  background-color: #25321d3b;
   padding: 20px;
   position: relative;
   top: 50px;
 }
-.contact > form > input {
-  width: 100%;
-  padding: 10px;
-  font-weight: bolder;
+
+.my-contact-details {
+  font-size: 15px;
+  color: #000;
 }
+
+.icons {
+  font-size: 2em;
+  color: #1a5069;
+  margin: 0 10px;
+}
+
 .contact > form > textarea {
   width: 100%;
   margin: 10px auto;
-  padding: 10px;
+  padding: 20px;
   height: 200px;
-  font-family: inherit;
+  font-family: cursive;
+  border: none;
+}
+.inputs-details {
+  display: flex;
+  justify-content: space-between;
+}
+.input-details {
+  width: 45%;
+  padding: 10px;
+  border: none;
+}
+.input-sub {
+  width: 100%;
+  padding: 10px;
+  border: none;
 }
 .send-btn {
   border: none;
   padding: 10px;
-  border-radius: 5px;
   background-color: #af9b08;
   font-weight: bold;
   cursor: pointer;
+  width: 100%;
 }
 
 @media screen and (max-width: 690px) {

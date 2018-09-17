@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "1f0e4175b8e6b1ff953d76ddb48fc73e",
-    "url": "/img/ES6LOGO.1f0e4175.svg"
+    "revision": "a8c861e750f1f89de3c79256c88c116f",
+    "url": "/img/sassydc-logo.a8c861e7.svg"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   },
   {
-    "revision": "35a46de57266fc71fc4f1aa40e5090fb",
-    "url": "/img/logo5.35a46de5.png"
+    "revision": "1f0e4175b8e6b1ff953d76ddb48fc73e",
+    "url": "/img/ES6LOGO.1f0e4175.svg"
   },
   {
     "revision": "c862f565a4e19b7aec38",
     "url": "/js/chunk-vendors.59645627.js"
   },
   {
-    "revision": "e137657013610a0d4a7c372896ed9681",
-    "url": "/img/email.e1376570.png"
+    "revision": "35a46de57266fc71fc4f1aa40e5090fb",
+    "url": "/img/logo5.35a46de5.png"
   },
   {
     "revision": "88932dadc42e1bba93b21a76de60ef7a",
@@ -28,8 +28,16 @@ self.__precacheManifest = [
     "url": "/img/feather-clipart-bunch-5.78aee62e.png"
   },
   {
+    "revision": "1858b3506efa084b9dcbdfd84cac7716",
+    "url": "/img/way-back.1858b350.jpg"
+  },
+  {
     "revision": "c19dec08a9de5297d83d37061e99c89b",
     "url": "/img/nurit.c19dec08.jpg"
+  },
+  {
+    "revision": "7335ca1e6f0e1a0caa232b7f2587eac4",
+    "url": "/img/protfolio-back.7335ca1e.jpg"
   },
   {
     "revision": "f80a91ba03fbf0e99ea6949aa3a6399e",
@@ -52,20 +60,20 @@ self.__precacheManifest = [
     "url": "/img/Boostrap_logo.06596577.svg"
   },
   {
-    "revision": "a8c861e750f1f89de3c79256c88c116f",
-    "url": "/img/sassydc-logo.a8c861e7.svg"
+    "revision": "5df2f0e3d55300932613",
+    "url": "/js/app.45aba16e.js"
   },
   {
-    "revision": "b121fe7b9c068c89f823",
-    "url": "/js/app.2a7baf92.js"
-  },
-  {
-    "revision": "d24d74bc9a62e4f477b39d94c0cdd5d3",
+    "revision": "22a546c5a79212720227a461071b3166",
     "url": "/index.html"
   },
   {
     "revision": "9c46095118380d38f12e67c916b427f9",
     "url": "/fonts/Montserrat-Regular.9c460951.ttf"
+  },
+  {
+    "revision": "e137657013610a0d4a7c372896ed9681",
+    "url": "/img/email.e1376570.png"
   },
   {
     "revision": "9999c1a8c347b81c5cb5df967664c4c3",
@@ -108,7 +116,7 @@ self.__precacheManifest = [
     "url": "/fonts/MavenPro-Regular.ac039aee.ttf"
   },
   {
-    "revision": "b121fe7b9c068c89f823",
-    "url": "/css/app.6dfd1e0c.css"
+    "revision": "5df2f0e3d55300932613",
+    "url": "/css/app.d6257e18.css"
   }
 ];
