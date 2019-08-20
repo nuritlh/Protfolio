@@ -2,146 +2,197 @@
   <div class="home">
     <div v-if="load" class="loading">
       <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-        <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
-        <circle cx="170" cy="170" r="135" stroke="#404041"/>
-        <circle cx="170" cy="170" r="110" stroke="#E2007C"/>
-        <circle cx="170" cy="170" r="85" stroke="#404041"/>
+        <circle cx="170" cy="170" r="160" stroke="#E2007C"></circle>
+        <circle cx="170" cy="170" r="135" stroke="#404041"></circle>
+        <circle cx="170" cy="170" r="110" stroke="#E2007C"></circle>
+        <circle cx="170" cy="170" r="85" stroke="#404041"></circle>
       </svg>
     </div>
     <div v-if="!load">
-    <div  class="cover-pic screen" id="home">
-          <div class="nav">
-            <a href="#">home</a> | 
-            <a href="#professional">skills</a> | 
-            <a href="#portfolio">portfolio</a> | 
-            <a href="#experience">experience</a> | 
-            <a href="#contact">contact</a>
+      <div class="cover-pic screen" id="home">
+        <div class="nav">
+          <a href="#">home</a> |
+          <a href="#professional">skills</a> |
+          <a href="#portfolio">portfolio</a> |
+          <a href="#experience">experience</a> |
+          <a href="#contact">contact</a>
+        </div>
+        <div class="name">
+          <p class="title">
+            I
+            <span class="span-color">'</span>m
+          </p>
+          <p class="title">nurit</p>
+          <p class="title">
+            Levi
+            <span class="span-color">.</span>
+          </p>
+          <p class="title job">
+            Front - End Developer
+            <span class="span-color">.</span>
+          </p>
+          <br>
+          <div class="container">
+            <svg
+              viewBox="0 0 1418 116"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>@WebDesignerMag</title>
+              <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+                <text
+                  id="@WebDesignerMag"
+                  stroke="#fff"
+                  fill="#645F5A"
+                  font-weight="normal"
+                  font-family="PermanentMarker-Regular, Permanent Marker"
+                  font-size="144"
+                >
+                  <tspan x="3" y="109">
+                    <!--
+                    -->
+                    <tspan>W</tspan>
+                    <!--
+                    -->
+                    <tspan>e</tspan>
+                    <!--
+                    -->
+                    <tspan>l</tspan>
+                    <!--
+                    -->
+                    <tspan>c</tspan>
+                    <!--
+                    -->
+                    <tspan>o</tspan>
+                    <!--
+                    -->
+                    <tspan>m</tspan>
+                    <!--
+                    -->
+                    <tspan>e</tspan>
+                    <!--
+                    -->
+                    <tspan>.</tspan>
+                    <!--
+                    -->
+                    <tspan>.</tspan>
+                    <!--
+                    -->
+                    <tspan>.</tspan>
+                    <!--
+                    -->
+                  </tspan>
+                </text>
+              </g>
+            </svg>
           </div>
-          <div class="name">
-            
-            <p class="title">I<span class="span-color">'</span>m</p>
-            <p class="title">nurit</p>
-            <p class="title">Levi<span class="span-color">.</span></p>
-            <p class="title job">Full Stack Developer <span class="span-color">.</span></p>
-            <br>
-                <div class="container">
-                  <svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>@WebDesignerMag</title>
-                    <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
-                      <text id="@WebDesignerMag" stroke="#fff" fill="#645F5A" font-weight="normal" font-family="PermanentMarker-Regular, Permanent Marker" font-size="144">
-                        <tspan x="3" y="109"><!--
-                          --><tspan>W</tspan><!--
-                          --><tspan>e</tspan><!--
-                          --><tspan>l</tspan><!--
-                          --><tspan>c</tspan><!--
-                          --><tspan>o</tspan><!--
-                          --><tspan>m</tspan><!--
-                          --><tspan>e</tspan><!--
-                          --><tspan>.</tspan><!--
-                          --><tspan>.</tspan><!--
-                          --><tspan>.</tspan><!--
-                        --></tspan>
-                      </text>
-                    </g>
-                  </svg>
-                </div>
-                <br>
-                <div class="container-bird">
-                <div class="bird-container bird-container--one">
-                  <div class="bird bird--one"></div>
-                </div>
-                <div class="bird-container bird-container--two">
-                  <div class="bird bird--two"></div>
-                </div>
-                <div class="bird-container bird-container--three">
-                  <div class="bird bird--three"></div>
-                </div>
-                <div class="bird-container bird-container--four">
-                  <div class="bird bird--four"></div>
-                </div>
-              </div>
-
+          <br>
+          <div class="container-bird">
+            <div class="bird-container bird-container--one">
+              <div class="bird bird--one"></div>
             </div>
-          <div class="about">
-            <p>Full Stack Developer, Passionate about technology, Striving to be the best, Independent in my doing & thinking.</p>
-            <!-- <p>Created advanced single page applications using Vue.js, Vuex state management, components, routing, node.js and
-              more.
-            </p> -->
-            <p>Have a degree in Industrial Engineering, Major in Information Systems, Graduate Full Stack, Web application boot-camp
-              at Coding-Academy.
-            </p>
-            <p>Outgoing and detail-oriented, I am proficient at building and maintaining professional relationships.</p>
+            <div class="bird-container bird-container--two">
+              <div class="bird bird--two"></div>
+            </div>
+            <div class="bird-container bird-container--three">
+              <div class="bird bird--three"></div>
+            </div>
+            <div class="bird-container bird-container--four">
+              <div class="bird bird--four"></div>
+            </div>
           </div>
-    </div>
-    <div class="page-container">
+        </div>
+        <div class="about">
+          <p>Front - End Developer, Passionate about technology, Striving to be the best, Independent in my doing & thinking.</p>
+          <p>
+            Created advanced single page applications using Vue/React, state management,
+            components, routing, node and more
+          </p>
+          <p>
+            Have a degree in Industrial Engineering, Major in Information Systems, Graduate Full Stack, Web application boot-camp
+            at Coding-Academy.
+          </p>
+          <p>Outgoing and detail-oriented, I am proficient at building and maintaining professional relationships.</p>
+        </div>
+      </div>
+      <div class="page-container">
         <div id="professional" class="page content">
           <div class="page-title">
             skills
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
-          <div class="">
+          <div class>
             <div>
               <img class="img-logo" src="../assets/img/ES6LOGO.svg">
-              <img  class="img-logo" src="../assets/img/html.svg">
-              <img  class="img-logo" src="../assets/img/CSS.3.svg.png">
-              <img  class="img-logo" src="../assets/img/sassydc-logo.svg">
+              <img class="img-logo" src="../assets/img/html.svg">
+              <img class="img-logo" src="../assets/img/CSS.3.svg.png">
+              <img class="img-logo" src="../assets/img/sassydc-logo.svg">
+              <img class="img-logo" src="../assets/img/typescript.svg">
             </div>
             <div>
-              <img  class="img-logo" src="../assets/img/Boostrap_logo.svg">
-              <img  class="img-logo" src="../assets/img/jquery.gif">
+              <img class="img-logo" src="../assets/img/Boostrap_logo.svg">
+              <img class="img-logo" src="../assets/img/jquery.gif">
             </div>
             <div>
-              <img  class="img-logo" src="../assets/img/vuejs.svg">
-              <img  class="img-logo" src="../assets/img/ReactJS.png">
-              <img  class="img-logo" src="../assets/img/nodejs.svg">
+              <img class="img-logo" src="../assets/img/vuejs.svg">
+              <img class="img-logo" src="../assets/img/ReactJS.png">
+              <img class="img-logo" src="../assets/img/nodejs.svg">
             </div>
             <div>
-              <img  class="img-logo" src="../assets/img/mysql.svg">
-              <img  class="img-logo mongo" src="../assets/img/mongodb.svg">
+              <img class="img-logo" src="../assets/img/mysql.svg">
+              <img class="img-logo mongo" src="../assets/img/mongodb.svg">
+            </div>
+            <div>
+              <img class="img-logo" src="../assets/img/git.svg">
+              <img class="img-logo mongo" src="../assets/img/mercirial.png">
             </div>
           </div>
         </div>
         <div id="portfolio" class="page screen-prot portfolio">
           <div class="page-title">
-            portfolio 
+            portfolio
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
           </div>
           <div class="card">
             <div class="project-cover">
               <img class="img-project" src="../assets/img/trvales.png">
-            <a href="https://travelmaker18.herokuapp.com/#/" target="_blank">
-              <div>
-                <div>Travel Maker App
-                <hr>
-                <span class="project-cover-span"> Vue.js</span>
+              <a href="https://travelmaker18.herokuapp.com/#/" target="_blank">
+                <div>
+                  <div>
+                    Travel Maker App
+                    <hr>
+                    <span class="project-cover-span">Vue.js</span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
             </div>
             <div class="project-cover">
               <img class="img-project" src="../assets/img/email.png">
-            <a href="https://nuritlh.github.io/Appsus/#/" target="_blank">
-              <div>
-                <div>Emails & Kepper App
-                <hr>
-                <span class="project-cover-span"> Vue.js</span>
-               </div>
-              </div>
-            </a>
+              <a href="https://nuritlh.github.io/Appsus/#/" target="_blank">
+                <div>
+                  <div>
+                    Emails & Kepper App
+                    <hr>
+                    <span class="project-cover-span">Vue.js</span>
+                  </div>
+                </div>
+              </a>
             </div>
             <div class="project-cover">
               <img class="img-project" src="../assets/img/imgGal.png">
-            <a href="https://nuritlh.gitlab.io/promote-gallery-exam/" target="_blank">
+              <a href="https://nuritlh.gitlab.io/promote-gallery-exam/" target="_blank">
                 <div>
-                <div>Image Gallery App
-                <hr>
-                <span class="project-cover-span">react</span>
+                  <div>
+                    Image Gallery App
+                    <hr>
+                    <span class="project-cover-span">react</span>
+                  </div>
                 </div>
-              </div>   
-            </a>
-            </div>
+              </a>
             </div>
           </div>
+        </div>
         <div id="experience" class="page screen-experience experience">
           <div class="page-title">
             experience
@@ -150,25 +201,48 @@
               <div class="employment">
                 <div class="experience-title">Employment</div>
                 <div class="experience-details">
-                  <p class="company-name"><img class="img-company" src="../assets/img/mellanox.png">Mellanox Technologies</p>
+                  <p class="company-name">
+                    <img class="img-company" src="../assets/img/zoomin.jpg">Zoomin Software
+                  </p>
+                  <p class="years">2018-2019</p>
+                  <p class="job-title">Front - End Developer</p>
+                  <p class="job-details">
+                    Customized knowledge portal solution for big scale software and hardware companies.
+                    Practice of producing HTML, CSS using React framework for Web Applications.
+                    Translated design team’s UX wireframes and mockups into responsive, interactive
+                    features. Led big scale client’s projects (for Dell, Intel, McAfee, Mastercard). Worked
+                    closely with the customer on scope, requirements, timelines and implemented the
+                    product from scratch to production.
+                    Implemented functionality in JavaScript using React, PWA and offline first strategy.
+                    Work with senior developer to manage large, complex design projects for clients
+                  </p>
+                  <p></p>
+                  <p class="company-name">
+                    <img class="img-company" src="../assets/img/mellanox.png">Mellanox Technologies
+                  </p>
                   <p class="years">2015-2018</p>
                   <p class="job-title">Project Management</p>
                   <p class="years">2017-2018</p>
-                  <p class="job-details">Information Project Management for all manufacturing operations units.
+                  <p class="job-details">
+                    Information Project Management for all manufacturing operations units.
                     Improving processes, identifying problems, defining work methodology, tools and methods.
                     Set customer requirements, system selection (internal, external requirements of suppliers, customers, employees).
                     QA for internal & custom systems/tools.
                   </p>
                   <p class="job-title">Supply Chain Controller</p>
-                    <p class="years">2015-2017</p>
-                  <p class="job-details">Responsible for planning and controlling the supply chain from the moment the raw material leaves the factories until it reaches the customer.
+                  <p class="years">2015-2017</p>
+                  <p class="job-details">
+                    Responsible for planning and controlling the supply chain from the moment the raw material leaves the factories until it reaches the customer.
                     Weekly reports of production group KPIs, inventories budgets and customer satisfaction to senior management (VP
                     Operations & Corporate Quality).
                   </p>
-                  <p class="company-name"><img class="img-company" src="../assets/img/DolphinSoft.png">DolphinSoft</p>
+                  <p class="company-name">
+                    <img class="img-company" src="../assets/img/DolphinSoft.png">DolphinSoft
+                  </p>
                   <p class="years">2014</p>
-                  <p class="job-details">Web Application Developer. End to end customer websites development.
-                    Setting up site infrastructure, design and promoting websites. 
+                  <p class="job-details">
+                    Web Application Developer. End to end customer websites development.
+                    Setting up site infrastructure, design and promoting websites.
                     Customer services, Including support for new characterization requirements and changes.
                   </p>
                   <p></p>
@@ -177,12 +251,23 @@
               <div class="education">
                 <div class="experience-title">Education</div>
                 <div class="experience-details">
-                  <p class="company-name"><img class="img-company" src="../assets/img/logo5.png">Coding-Academy</p>
+                  <p class="company-name">
+                    <img class="img-company" src="../assets/img/logo5.png">Coding-Academy
+                  </p>
                   <p class="years">2018</p>
-                  <p class="job-details">An intensive coding boot-camp (540 hours) that qualifies Front-End developers</p>
-                  <p class="company-name"><img class="img-company" src="../assets/img/Ruppin_Academic_Center_Logo.svg.png">Ruppin Academic Center</p>
+                  <p
+                    class="job-details"
+                  >An intensive coding boot-camp (540 hours) that qualifies Front-End developers</p>
+                  <p class="company-name">
+                    <img
+                      class="img-company"
+                      src="../assets/img/Ruppin_Academic_Center_Logo.svg.png"
+                    >Ruppin Academic Center
+                  </p>
                   <p class="years">2011-2015</p>
-                  <p class="job-details">Bachelor of Science – BS, Industrial Engineering, Major in Information Systems.</p>
+                  <p
+                    class="job-details"
+                  >Bachelor of Science – BS, Industrial Engineering, Major in Information Systems.</p>
                 </div>
               </div>
             </div>
@@ -193,28 +278,57 @@
             contact
             <i @click="scrollUp" class="fas fa-arrow-alt-circle-up"></i>
             <div class="my-contact-details">
-                <p>+ 972 - 504995755</p>
-                <p>nuritlh@gmail.com</p>
-                <div>
-                  <a href="https://www.linkedin.com/in/nurit-levi-hevroni-0308392b/" target="_blank"><i class="fab fa-linkedin icons"></i></a>
-                  <a href="https://www.facebook.com/nurit.hevroni?ref=br_rs" target="_blank"><i class="fab fa-facebook-square icons"></i></a>
-                  <a href="https://www.instagram.com/nurit_lh/" target="_blank"><i class="fab fa-instagram icons"></i></a>
-                </div>
+              <p>+ 972 - 504995755</p>
+              <p>nuritlh@gmail.com</p>
+              <div>
+                <a href="https://www.linkedin.com/in/nurit-levi-hevroni-0308392b/" target="_blank">
+                  <i class="fab fa-linkedin icons"></i>
+                </a>
+                <a href="https://www.facebook.com/nurit.hevroni?ref=br_rs" target="_blank">
+                  <i class="fab fa-facebook-square icons"></i>
+                </a>
+                <a href="https://www.instagram.com/nurit_lh/" target="_blank">
+                  <i class="fab fa-instagram icons"></i>
+                </a>
               </div>
+            </div>
             <div class="contact">
-            <form>
-              <div class="inputs-details">
-                <input type="text" class="input-details" id="name-mail" aria-describedby="emailHelp" placeholder="Name">
-                <input type="text" class="input-details" id="phone-mail" aria-describedby="emailHelp" placeholder="Phone">
-              </div>
-                <input type="text" class="input-sub" id="subject-mail" aria-describedby="emailHelp" placeholder="Subject">
-                <textarea class="form-control contact-me-body" id="mail-massage-body" rows="3" placeholder="WRITE ME HERE..."></textarea>
-              <button type="button" class="send-btn" @click="onFormContactClicked">SEND</button>
-            </form>
-          </div>
+              <form>
+                <div class="inputs-details">
+                  <input
+                    type="text"
+                    class="input-details"
+                    id="name-mail"
+                    aria-describedby="emailHelp"
+                    placeholder="Name"
+                  >
+                  <input
+                    type="text"
+                    class="input-details"
+                    id="phone-mail"
+                    aria-describedby="emailHelp"
+                    placeholder="Phone"
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="input-sub"
+                  id="subject-mail"
+                  aria-describedby="emailHelp"
+                  placeholder="Subject"
+                >
+                <textarea
+                  class="form-control contact-me-body"
+                  id="mail-massage-body"
+                  rows="3"
+                  placeholder="WRITE ME HERE..."
+                ></textarea>
+                <button type="button" class="send-btn" @click="onFormContactClicked">SEND</button>
+              </form>
+            </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 </template>
@@ -223,7 +337,7 @@
 // @ is an alias to /src
 
 export default {
-  name: 'home',
+  name: "home",
   components: {},
   data() {
     return {
@@ -237,29 +351,29 @@ export default {
     loading() {
       setTimeout(function() {
         this.load = false;
-        console.log('here', this.load);
+        console.log("here", this.load);
       }, 1000);
     },
     scrollUp() {
       window.scroll({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: "smooth"
       });
     },
 
     onFormContactClicked() {
       // ev.preventDefault();
-      var contactSubject = document.querySelector('#subject-mail').value;
-      var contactBody = document.querySelector('#mail-massage-body').value;
-      var contactName = document.querySelector('#name-mail').value;
-      var contactPhone = document.querySelector('#phone-mail').value;
+      var contactSubject = document.querySelector("#subject-mail").value;
+      var contactBody = document.querySelector("#mail-massage-body").value;
+      var contactName = document.querySelector("#name-mail").value;
+      var contactPhone = document.querySelector("#phone-mail").value;
       var body = `${contactBody}
                ${contactName}
                ${contactPhone}`;
       window.open(
         `https://mail.google.com/mail/?view=cm&fs=1&to=nuritlh@gmail.com&su=${contactSubject}&body=${body}`,
-        '_blank'
+        "_blank"
       );
     }
   }
@@ -271,7 +385,7 @@ export default {
   position: relative;
 }
 .screen::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -283,7 +397,7 @@ export default {
   );
 }
 .cover-pic {
-  background-image: url('../assets/img/nurit.jpg');
+  background-image: url("../assets/img/nurit.jpg");
   width: 100%;
   height: calc(100vh);
   display: flex;
@@ -360,7 +474,7 @@ export default {
   margin: 10px;
 }
 .content {
-  background-image: url('../assets/img/feather-clipart-bunch-5.png');
+  background-image: url("../assets/img/feather-clipart-bunch-5.png");
   background-repeat: no-repeat;
   background-size: contain;
   transition: all 1s ease;
@@ -400,7 +514,7 @@ export default {
   position: relative;
 }
 .screen-prot::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -414,7 +528,7 @@ export default {
   );
 }
 .portfolio {
-  background-image: url('../assets/img/portfolio-back.jpg');
+  background-image: url("../assets/img/portfolio-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -491,7 +605,7 @@ export default {
   position: relative;
 }
 .screen-experience::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -505,7 +619,7 @@ export default {
   );
 }
 .experience {
-  background-image: url('../assets/img/way-back.jpg');
+  background-image: url("../assets/img/way-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -680,7 +794,7 @@ export default {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 .container {
   display: flex;
   align-items: center;
@@ -775,7 +889,7 @@ export default {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:300");
 *,
 *::before,
 *::after {
